@@ -66,4 +66,9 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    // ViewModel dependency
+    implementation (libs.androidx.lifecycle.viewmodel.compose) // or the latest version
+
+    // Lifecycle runtime (required by ViewModel)
+    implementation (libs.androidx.lifecycle.runtime.ktx.v287 )// or the latest version
 }
